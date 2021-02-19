@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aaron\\source\\repos\\datacloud\\GiphyRobotAPI\\GiphyRobotAPI\\GetOnGiphyAPI.csproj": {}
+    "C:\\Users\\6110201\\source\\repos\\GetOnGiphy\\GetOnGiphyAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aaron\\source\\repos\\datacloud\\GiphyRobotAPI\\GiphyRobotAPI\\GetOnGiphyAPI.csproj": {
+    "C:\\Users\\6110201\\source\\repos\\GetOnGiphy\\GetOnGiphyAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\source\\repos\\datacloud\\GiphyRobotAPI\\GiphyRobotAPI\\GetOnGiphyAPI.csproj",
+        "projectUniqueName": "C:\\Users\\6110201\\source\\repos\\GetOnGiphy\\GetOnGiphyAPI.csproj",
         "projectName": "GetOnGiphyAPI",
-        "projectPath": "C:\\Users\\Aaron\\source\\repos\\datacloud\\GiphyRobotAPI\\GiphyRobotAPI\\GetOnGiphyAPI.csproj",
-        "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\source\\repos\\datacloud\\GiphyRobotAPI\\GiphyRobotAPI\\obj\\",
+        "projectPath": "C:\\Users\\6110201\\source\\repos\\GetOnGiphy\\GetOnGiphyAPI.csproj",
+        "packagesPath": "C:\\Users\\6110201\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\6110201\\source\\repos\\GetOnGiphy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\6110201\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -2,8 +2,6 @@
 using GetOnGiphyAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -11,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GetOnGiphyAPI.Controllers
 {
-    [Route("[controller]")]
+    [Route("/")]
     [ApiController]
     public class GiphyController : ControllerBase
     {
@@ -23,15 +21,22 @@ namespace GetOnGiphyAPI.Controllers
             _logger = logger;
         }
 
-        // GET: <GiphyController>
+        // GET: /
         [HttpGet]
         public string Get()
         {
-            string warning = "API made in 1 hour and 38 minutes by a dude who never made even a simple .NET console application. #NeverStopLearning! \n ~ Aaron Carneiro (@euaaron)";
+            string warning = "You need to provide a search string and you can define a return amount. \n" +
+                "Ex.: \n" +
+                "https://api.geton-giphy.euaaron.codes/Rocambole/6" +
+                "\n\n\n\n" +
+                "You may find a documentation at 'https://api.geton-giphy.euaaron.codes/swagger/' \n" +
+                "API made in 1 hour and 38 minutes by a dude who never made even a simple .NET console application. " +
+                "#NeverStopLearning! \n" +
+                "~ Aaron Carneiro (@euaaron)";
             return warning;
         }        
 
-        // GET <GiphyController>/Aang
+        // GET /Rocambole
         [HttpGet("{searchString}")]
         public async Task<IEnumerable<GiphyResult>> Get(string searchString)
         {
@@ -40,7 +45,7 @@ namespace GetOnGiphyAPI.Controllers
             return resultSet;
         }
 
-        // GET <GiphyController>/Aang/15
+        // GET /Aang/15
         [HttpGet("{searchString}/{amount}")]
         public async Task<IEnumerable<GiphyResult>> Get(string searchString, int amount = DEFAULT_AMOUNT)
         {
